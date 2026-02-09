@@ -148,10 +148,12 @@
                 route your message appropriately.
             </p>
 
-            <form action="mailto:allenbazil17@gmail.com" method="post" enctype="text/plain"
+            <form action="mailto:allenbazil17@gmail.com" method="GET"
                 aria-describedby="form-instructions" aria-label="Contact form">
                 <fieldset>
                     <legend>Send me a message</legend>
+
+                    <input type="hidden" name="subject" value="Message from your bio page">
 
                     <div class="form-group">
                         <label for="sender-name">Name <span class="required-marker" aria-hidden="true">*</span><span
@@ -182,7 +184,7 @@
                     <div class="form-group">
                         <label for="message">Message <span class="required-marker" aria-hidden="true">*</span><span
                                 class="visually-hidden">(required)</span></label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="body" rows="5" required></textarea>
                     </div>
 
                     <button type="submit">Send Message</button>
