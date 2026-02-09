@@ -266,7 +266,8 @@ a:focus {
   margin-bottom: 1.2rem;
 }
 
-.form-group {
+.form-row {
+  display: grid;
   margin-bottom: 1.2rem;
 }
 

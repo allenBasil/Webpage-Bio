@@ -148,30 +148,25 @@
                 route your message appropriately.
             </p>
 
-            <form action="mailto:allenbazil17@gmail.com" method="GET"
+            <form action="mailto:allenbazil17@gmail.com" method="post"
                 aria-describedby="form-instructions" aria-label="Contact form">
                 <fieldset>
-                    <legend>Send me a message</legend>
+                    <legend>Message form</legend>
 
                     <input type="hidden" name="subject" value="Message from your bio page">
 
-                    <div class="form-group">
-                        <label for="sender-name">Name <span class="required-marker" aria-hidden="true">*</span><span
-                                class="visually-hidden">(required)</span></label>
-                        <input type="text" id="sender-name" name="name" required
-                            autocomplete="name">
+                    <div class="form-row">
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="sender-email">Email <span class="required-marker" aria-hidden="true">*</span><span
-                                class="visually-hidden">(required)</span></label>
-                        <input type="email" id="sender-email" name="email" required
-                            autocomplete="email">
+                    <div class="form-row">
+                        <label for="email">Your email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="topic">Topic <span class="required-marker" aria-hidden="true">*</span><span
-                                class="visually-hidden">(required)</span></label>
+                    <div class="form-row">
+                        <label for="topic">Accessibility topic you want to collaborate on</label>
                         <select id="topic" name="topic" required>
                             <option value="">— Select a topic —</option>
                             <option value="Team Project">Team Project</option>
@@ -181,13 +176,12 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Message <span class="required-marker" aria-hidden="true">*</span><span
-                                class="visually-hidden">(required)</span></label>
-                        <textarea id="message" name="body" rows="5" required></textarea>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit">Send email</button>
                 </fieldset>
             </form>
         </section>
