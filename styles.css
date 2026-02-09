@@ -73,8 +73,8 @@ body {
   align-items: flex-end;
   gap: 1.5rem;
   position: relative;
-  top: -3rem;                  /* pull up over cover image */
-  margin-bottom: -2rem;        /* collapse the gap left behind */
+  top: -3rem;                  
+  margin-bottom: -2rem;        
 }
 
 .banner-avatar {
