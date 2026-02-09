@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Basil — Web Page Bio</title>
+    <meta name="description"
+        content="Personal bio page for Allen Basil, a computer science student exploring web accessibility and inclusive design.">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="banner">
+        <div class="banner-cover">
+            <img
+                src="https://media.licdn.com/dms/image/v2/D5616AQHBy3A09AdafQ/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1725824438765?e=1772064000&v=beta&t=ARJRUKiHLN3QBbAQYKNZpvggPuU05IMn6PIwUcL30LQ"
+                alt="" aria-hidden="true" class="banner-cover-img">
+        </div>
+        <div class="banner-profile">
+            <figure class="banner-avatar">
+                <img
+                    src="https://media.licdn.com/dms/image/v2/D5603AQERGngfOY0oxQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725824186779?e=1772064000&v=beta&t=8xUbslcxCY9h1xvQ8H_rWFmsYyltnOEyV0V-ZFPw0c0"
+                    alt="Portrait of Allen Basil smiling in front of a black background" class="profile-photo">
+                <figcaption class="visually-hidden">Allen Basil, computer science student at Texas A&amp;M University</figcaption>
+            </figure>
+            <div class="banner-info">
+                <h1>Allen Basil</h1>
+                <p>Computer Science Student &amp; Software Engineer — Texas A&amp;M University</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="page-nav" aria-label="Page sections">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#team">Team &amp; Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- ===== About Me ===== -->
+        <section id="about" aria-labelledby="heading-about">
+            <h2 id="heading-about">About Me</h2>
+            <p>
+                I'm a computer science student at <em>Texas A&amp;M University</em> with
+                hands-on experience building full-stack applications, machine learning
+                pipelines, and data-driven tools. I've worked on internships and research
+                projects where I design user interfaces, implement server-side APIs, and
+                ship production-ready software.
+            </p>
+            <p>
+                My background includes modern web development with
+                <strong>React, Flask, and Node.js</strong>; data and ML work with
+                <strong>Python, PyTorch, Pandas, and OpenCV</strong>; and solid fundamentals
+                in <strong>C++, Java, SQL, and Git</strong>. I also have experience
+                cleaning and visualizing data, building ETL pipelines, and deploying
+                tools that non-technical users rely on every day.
+            </p>
+        </section>
+
+        <!-- ===== Accessibility Interests ===== -->
+        <section id="accessibility" aria-labelledby="heading-accessibility">
+            <h2 id="heading-accessibility">Accessibility Interests</h2>
+            <p>
+                Building software that people <em>actually rely on</em> has taught me that
+                accessibility is not an afterthought — it is a core engineering requirement.
+                During my internship I shipped a browser-based compliance tool used daily by
+                non-technical reviewers, which made me acutely aware of how design choices
+                affect real users. That experience pushed me to learn the
+                <strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr></strong>
+                and apply its principles in every interface I build.
+            </p>
+
+            <h3>Topics I Am Exploring</h3>
+            <ul>
+                <li>Semantic <abbr title="HyperText Markup Language">HTML</abbr> and its impact on screen readers and
+                    assistive technology</li>
+                <li>Color contrast, typography, and readability for users with low vision</li>
+                <li>Keyboard navigation and visible focus management across complex forms</li>
+                <li>Writing meaningful alternative text for data visualizations and images</li>
+                <li>Accessible single-page application patterns in React and TypeScript</li>
+            </ul>
+
+            <p>
+                The
+                <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">
+                    W3C Web Accessibility Initiative introduction
+                </a>
+                is a resource I return to often because it frames accessibility not just as
+                compliance, but as a <em>design philosophy</em> that benefits everyone.
+            </p>
+        </section>
+
+        <!-- ===== Team Project Connections ===== -->
+        <section id="team" aria-labelledby="heading-team">
+            <h2 id="heading-team">Team &amp; Skills</h2>
+            <p>
+                I bring hands-on experience across the full stack. My strongest languages are
+                <strong>Python, JavaScript, C++, Java, and SQL</strong>, and I work regularly
+                with frameworks like <strong>React, Flask, and Node.js</strong>. On the data
+                and machine learning side I use Pandas, NumPy, Matplotlib, PyTorch, and OpenCV.
+            </p>
+
+            <h3>What I Bring to a Team</h3>
+            <ol>
+                <li>End-to-end web development — from database design to accessible front-end interfaces</li>
+                <li>Data pipeline and <abbr title="Extract, Transform, Load">ETL</abbr> experience with real production
+                    tools</li>
+                <li>Machine learning prototyping, training pipelines, and model evaluation</li>
+                <li>Comfort with Git workflows, code review, and shipping under deadline pressure</li>
+            </ol>
+
+            <p>
+                I thrive in team settings where members hold each other accountable for writing
+                <strong>clean, well-structured code</strong>. During the TAMUhack hackathon I
+                collaborated with teammates to architect, build, and demo Skyward Companion in
+                under 24 hours — an experience that reinforced how important clear communication
+                and modular design are when the clock is ticking.
+            </p>
+            <p>
+                I am looking for collaborators who care about <em>user-centered design</em>,
+                accessible interfaces, and building tools that work reliably across devices.
+                If that resonates with you, I would love to connect.
+            </p>
+        </section>
+
+        
+
+        <!-- ===== Contact / Reach Out ===== -->
+        <section id="contact" aria-labelledby="heading-contact">
+            <h2 id="heading-contact">Contact / Reach Out</h2>
+            <p>
+                Have a question or want to collaborate on a project? Fill out the form
+                below and it will open your default email client so you can send me a
+                message directly at <strong>allenbazil17@gmail.com</strong>.
+            </p>
+
+            <p class="form-instructions" id="form-instructions">
+                All fields are required. Choose a topic from the dropdown so I can
+                route your message appropriately.
+            </p>
+
+            <form action="mailto:allenbazil17@gmail.com" method="post" enctype="text/plain"
+                aria-describedby="form-instructions" aria-label="Contact form">
+                <fieldset>
+                    <legend>Send me a message</legend>
+
+                    <div class="form-group">
+                        <label for="sender-name">Name <span class="required-marker" aria-hidden="true">*</span><span
+                                class="visually-hidden">(required)</span></label>
+                        <input type="text" id="sender-name" name="name" required aria-required="true"
+                            autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sender-email">Email <span class="required-marker" aria-hidden="true">*</span><span
+                                class="visually-hidden">(required)</span></label>
+                        <input type="email" id="sender-email" name="email" required aria-required="true"
+                            autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic">Topic <span class="required-marker" aria-hidden="true">*</span><span
+                                class="visually-hidden">(required)</span></label>
+                        <select id="topic" name="topic" required aria-required="true">
+                            <option value="">— Select a topic —</option>
+                            <option value="Team Project">Team Project</option>
+                            <option value="Accessibility Question">Accessibility Question</option>
+                            <option value="General Hello">General Hello</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required-marker" aria-hidden="true">*</span><span
+                                class="visually-hidden">(required)</span></label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- ===== Links ===== -->
+        <section id="links" aria-labelledby="heading-links">
+            <h2 id="heading-links">Links</h2>
+            <nav aria-label="Useful links">
+                <ul class="link-list">
+                    <li>
+                        <a href="https://people.engr.tamu.edu/rickMDOTfuruta/courses/CSCE432/bios/biolinks.html">
+                            CSCE 432 Web Page Bio Links page
+                        </a> — browse bio sites from every student in the class
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/allenbasil/">
+                            Allen Basil on LinkedIn
+                        </a> — connect with me professionally
+                    </li>
+                    <li>
+                        <a href="https://github.com/allenBasil">
+                            Allen Basil on GitHub
+                        </a> — view my open-source projects and contributions
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><small>&copy; <time datetime="2026">2026</time> Allen Basil. Built with semantic HTML &amp; CSS for CSCE
+                432.</small></p>
+    </footer>
+
+</body>
+
+</html>

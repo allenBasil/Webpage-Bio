@@ -1,0 +1,542 @@
+/* ============================================================
+   styles.css — Accessible Web Page Bio
+   External stylesheet for index.html
+   ============================================================ */
+
+/* ---------- Reset & Base Typography ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;       /* 18 px base */
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+
+/* ---------- Skip-to-Main Link ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 0.6em 1.2em;
+  z-index: 1000;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid #d4a017;
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+
+/* --- Banner (LinkedIn-style) --- */
+
+.banner {
+  background-color: #500000;
+  color: #ffffff;
+}
+
+.banner-cover {
+  width: 100%;
+  max-height: 220px;
+  overflow: hidden;
+  line-height: 0;              /* remove inline-img whitespace */
+}
+
+.banner-cover-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-profile {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  position: relative;
+  top: -3rem;                  /* pull up over cover image */
+  margin-bottom: -2rem;        /* collapse the gap left behind */
+}
+
+.banner-avatar {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.banner-avatar .profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  object-fit: cover;
+}
+
+.banner-info {
+  padding-bottom: 0.4rem;
+}
+
+.banner-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.15rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner-info p {
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+/* ---------- Page Navigation Bar ---------- */
+
+.page-nav {
+  background-color: #3b0000;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  border-bottom: 2px solid #d4a017;
+}
+
+.page-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav li {
+  margin: 0;
+}
+
+.page-nav a {
+  display: block;
+  padding: 0.7rem 1.25rem;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page-nav a:hover {
+  background-color: #500000;
+  color: #ffffff;
+}
+
+.page-nav a:focus {
+  outline: 3px solid #d4a017;
+  outline-offset: -3px;
+  background-color: #500000;
+  color: #ffffff;
+}
+
+/* ---------- Main Content ---------- */
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #500000;
+  border-bottom: 2px solid #500000;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Images ---------- */
+
+.profile-photo {
+  display: block;
+  max-width: 220px;
+  height: auto;
+  border-radius: 6px;
+  margin: 0 auto 1.5rem;
+  border: 3px solid #500000;
+  object-fit: cover;
+}
+
+.decorative-img {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
+
+figure {
+  margin: 0 0 1.5rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 0.4rem;
+}
+
+/* ---------- Abbreviations ---------- */
+
+abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  cursor: help;
+}
+
+/* ---------- Lists ---------- */
+
+ul,
+ol {
+  margin: 0 0 1rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: #004080;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #002244;
+  text-decoration-thickness: 2px;
+}
+
+a:focus {
+  outline: 3px solid #d4a017;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- Form ---------- */
+
+.form-instructions {
+  font-size: 0.95rem;
+  color: #333333;
+  margin-bottom: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid #666666;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #d4a017;
+  outline-offset: 2px;
+  border-color: #500000;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #500000;
+  border: 2px solid #500000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3b0000;
+  border-color: #3b0000;
+}
+
+button[type="submit"]:focus {
+  outline: 3px solid #d4a017;
+  outline-offset: 2px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.required-marker {
+  color: #b30000;
+  font-weight: 700;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #555555;
+  border-top: 1px solid #cccccc;
+  margin-top: 2rem;
+}
+
+/* ---------- Link List ---------- */
+
+.link-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.link-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.link-list li::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  color: #500000;
+  font-weight: 700;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+@media (max-width: 600px) {
+  .banner-cover,
+  .banner-cover-img {
+    max-height: 140px;
+    height: 140px;
+  }
+
+  .banner-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: -2.5rem;
+    margin-bottom: -1.5rem;
+    gap: 0.75rem;
+  }
+
+  .banner-avatar .profile-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .banner-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-info p {
+    font-size: 0.9rem;
+  }
+
+  .page-nav a {
+    padding: 0.55rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  .profile-photo {
+    max-width: 160px;
+  }
+}
+
+/* ---------- Utility Classes ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Smooth Scroll ---------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
+/* ---------- Reduced Motion (WCAG 2.3.3) ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- High Contrast (WCAG 1.4.11) ---------- */
+
+@media (prefers-contrast: more) {
+  body {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  a {
+    color: #00007a;
+    text-decoration-thickness: 2px;
+  }
+
+  h2 {
+    color: #000000;
+    border-bottom-color: #000000;
+  }
+
+  input,
+  select,
+  textarea {
+    border-color: #000000;
+  }
+
+  button[type="submit"] {
+    border: 3px solid #000000;
+  }
+}
+
+/* ---------- Print Styles ---------- */
+
+@media print {
+  .skip-link,
+  .decorative-img,
+  .page-nav,
+  form {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000000;
+    background: #ffffff;
+  }
+
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+  }
+
+  .banner-cover {
+    display: none;
+  }
+
+  .banner-profile {
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .banner-avatar .profile-photo {
+    border-color: #000000;
+    box-shadow: none;
+  }
+
+  .banner-info h1 {
+    text-shadow: none;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    word-break: break-all;
+  }
+}
